@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: ntfy
+
+commonLabels:
+  app.kubernetes.io/name: ntfy
+
+resources:
+  - deployment.yaml
+  - svc.yaml
+  - pvc.yaml
+  - ingress.yaml
+
+configMapGenerator:
+  - name: ntfy-config
+    files:
+      - server.yaml

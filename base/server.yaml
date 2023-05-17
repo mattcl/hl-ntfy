@@ -1,0 +1,3 @@
+base-url: "https://ntfy.hl.ancalagon.black"
+cache-file: "/var/cache/ntfy/cache.db"
+attachment-cache-dir: "/var/cache/ntfy/attachments"
