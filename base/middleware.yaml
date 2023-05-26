@@ -1,0 +1,11 @@
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: ntfy-web-basic-auth
+  namespace: ntfy
+  # labels:
+  #   traffic-type: external
+spec:
+  basicAuth:
+    secret: ntfy-basic-auth

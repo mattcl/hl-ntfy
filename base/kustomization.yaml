@@ -7,6 +7,7 @@ commonLabels:
   app.kubernetes.io/name: ntfy
 
 resources:
+  - middleware.yaml
   - deployment.yaml
   - svc.yaml
   - pvc.yaml

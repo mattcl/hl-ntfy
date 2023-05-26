@@ -10,6 +10,15 @@ spec:
     - websecure
   routes:
     - kind: Rule
+      match: Host(`ntfy.hl.ancalagon.black`) && PathPrefix("/web")
+      priority: 10
+      middlewares:
+        - name: ntfy-basic-auth
+          namespace: ntfy
+      services:
+        - name: ntfy
+          port: 80
+    - kind: Rule
       match: Host(`ntfy.hl.ancalagon.black`)
       priority: 10
       services:
