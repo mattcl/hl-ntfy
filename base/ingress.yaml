@@ -13,7 +13,7 @@ spec:
       match: Host(`ntfy.hl.ancalagon.black`) && PathPrefix("/app")
       priority: 10
       middlewares:
-        - name: ntfy-basic-auth
+        - name: ntfy-web-basic-auth
           namespace: ntfy
       services:
         - name: ntfy

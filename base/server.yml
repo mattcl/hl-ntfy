@@ -4,4 +4,4 @@ auth-file: "/var/cache/ntfy/user.db"
 base-url: "https://ntfy.hl.ancalagon.black"
 behind-proxy: true
 cache-file: "/var/cache/ntfy/cache.db"
-web-root: app
+web-root: "/app"
