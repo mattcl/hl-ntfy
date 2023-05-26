@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: ntfy
-          image: binwiederhier/ntfy:v1.28.0 # set deployed version
+          image: binwiederhier/ntfy:v2.5.0 # set deployed version
           args: ["serve"]
           env:
             - name: TZ # set timezone
