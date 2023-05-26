@@ -1,5 +1,6 @@
-base-url: "https://ntfy.hl.ancalagon.black"
-cache-file: "/var/cache/ntfy/cache.db"
 attachment-cache-dir: "/var/cache/ntfy/attachments"
+auth-default-access: "deny-all"
 auth-file: "/var/cache/ntfy/user.db"
-auth-default-access: "read-write"
+base-url: "https://ntfy.hl.ancalagon.black"
+behind-proxy: true
+cache-file: "/var/cache/ntfy/cache.db"
